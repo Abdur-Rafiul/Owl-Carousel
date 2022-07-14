@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owl Carousel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+</head>
+<body>
+    
+    <div class="container-fluid">
+       
+        <div class="owl-slider1 owl-carousel owl-theme">
+           
+            <div class="item"><img src="images/Carousel-2.jpg" alt=""></div>
+            <div class="item"><img src="images/Carousel-3.jpg" alt=""></div>
+            <div class="item"><img src="images/Carousel-1.jpg" alt=""></div>
+            <div class="item"><img src="images/Carousel-5.jpg" alt=""></div>
+            
+           
+        </div>
+       
+  
+    <div class="owl-slider2 owl-carousel owl-theme " >
+           
+        <div class="item">
+            <div class="card text-center border border-info shadow-0 ">
+                <div class="bg-image hover-overlay ripple card-img" data-mdb-ripple-color="light">
+                  <img src="images/Floor-3.jpg" class="img-fluid" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+              
+                <div class="card-body">
+                  <h5 class="card-title">Rafiul</h5>
+              
+                </div>
+              </div>
+        </div>
+        <div class="item">
+            <div class="card text-center border border-info shadow-0 ">
+                <div class="bg-image hover-overlay ripple card-img" data-mdb-ripple-color="light">
+                  <img src="images/Floor-5.jpg" class="img-fluid" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+              
+                <div class="card-body">
+                  <h5 class="card-title">Rafiul</h5>
+              
+                </div>
+              </div>
+        </div>
+        <div class="item">
+            <div class="card text-center border border-info shadow-0 ">
+                <div class="bg-image hover-overlay ripple card-img" data-mdb-ripple-color="light">
+                  <img src="images/Floor-6.jpg "class="img-fluid " />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+              
+                <div class="card-body">
+                  <h5 class="card-title">Rafiul</h5>
+              
+                </div>
+              </div>
+        </div>
+     
+       
+    </div>
+</div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+
+    <script type="text/javascript">
+
+$('.owl-slider1').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    // stagePadding:50,
+    center:true,
+    autoplay:true,
+    autoplayHoverPause:true,
+    autoplayTimeout:2000,
+    dots:false,
+    navText:[
+   ' <i class="fa-solid fa-angle-right fa-xl"></i>',
+    "<i class='fa-solid fa-chevron-left fa-xl' ></i>"
+  
+    ],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+});
+$('.owl-slider2').owlCarousel({
+    loop:true,
+    margin:20,
+   
+    // stagePadding:50,
+    center:true,
+    autoplay:true,
+    
+    autoplayTimeout:2000,
+    dots:true,
+    nav:true,
+    navText:['Prev','Next'],
+    
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:7
+        }
+    },
+   
+})
+
+
+
+
+</script>
+   
+</body>
+</html>
